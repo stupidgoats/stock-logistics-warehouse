@@ -94,12 +94,6 @@ msgid "Analytic accounting in Stock Requests"
 msgstr "库存请求中的分析会计"
 
 #. module: stock_request
-#: model_terms:ir.ui.view,arch_db:stock_request.stock_request_order_search
-#: model_terms:ir.ui.view,arch_db:stock_request.stock_request_search
-msgid "Archived"
-msgstr "已归档"
-
-#. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_stock_request__message_attachment_count
 #: model:ir.model.fields,field_description:stock_request.field_stock_request_abstract__message_attachment_count
 #: model:ir.model.fields,field_description:stock_request.field_stock_request_order__message_attachment_count
@@ -179,6 +173,11 @@ msgstr "创建时间"
 #, fuzzy
 msgid "Current requests"
 msgstr "库存请求"
+
+#. module: stock_request
+#: model_terms:ir.ui.view,arch_db:stock_request.stock_request_pivot_search
+msgid "Date"
+msgstr ""
 
 #. module: stock_request
 #: model:ir.model.fields,help:stock_request.field_stock_request__expected_date
@@ -594,6 +593,11 @@ msgid "Purchases"
 msgstr "采购"
 
 #. module: stock_request
+#: model:ir.model.fields,field_description:stock_request.field_stock_request__qty_cancelled
+msgid "Qty Cancelled"
+msgstr ""
+
+#. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_stock_request__qty_done
 msgid "Qty Done"
 msgstr "完成数量"
@@ -608,6 +612,11 @@ msgstr "进行中的数量"
 #: model:ir.model.fields,field_description:stock_request.field_stock_request_abstract__product_uom_qty
 msgid "Quantity"
 msgstr "数量"
+
+#. module: stock_request
+#: model:ir.model.fields,help:stock_request.field_stock_request__qty_cancelled
+msgid "Quantity cancelled"
+msgstr ""
 
 #. module: stock_request
 #: model:ir.model.fields,help:stock_request.field_stock_request__qty_done
@@ -669,6 +678,11 @@ msgstr "一次接收所有产品"
 #: model:ir.model.fields.selection,name:stock_request.selection__stock_request_order__picking_policy__direct
 msgid "Receive each product when available"
 msgstr "收到每个可用的产品"
+
+#. module: stock_request
+#: model:ir.ui.menu,name:stock_request.menu_stock_request_report_root
+msgid "Reports"
+msgstr ""
 
 #. module: stock_request
 #: model:ir.actions.server,name:stock_request.action_template_generate_stock_request_orders
@@ -826,6 +840,12 @@ msgid "Stock Request Orders"
 msgstr "库存请求单"
 
 #. module: stock_request
+#: model:ir.actions.act_window,name:stock_request.stock_request_pivot_action
+#: model:ir.ui.menu,name:stock_request.menu_stock_request_report
+msgid "Stock Request Report"
+msgstr ""
+
+#. module: stock_request
 #: model:ir.model,name:stock_request.model_stock_request_abstract
 msgid "Stock Request Template"
 msgstr "库存请求模版"
@@ -859,6 +879,7 @@ msgstr "库存请求产品的数量必须严格为正数。"
 #: model:ir.ui.menu,name:stock_request.menu_stock_request
 #: model:ir.ui.menu,name:stock_request.menu_stock_request_root
 #: model_terms:ir.ui.view,arch_db:stock_request.stock_request_order_form
+#: model_terms:ir.ui.view,arch_db:stock_request.stock_request_pivot
 #: model_terms:ir.ui.view,arch_db:stock_request.stock_request_search
 #: model_terms:ir.ui.view,arch_db:stock_request.view_picking_form
 #: model_terms:ir.ui.view,arch_db:stock_request.view_stock_request_form
@@ -1107,6 +1128,9 @@ msgid ""
 "You have to select a product unit of measure in the same category than the "
 "default unit of measure of the product"
 msgstr "您必须选择与产品默认计量单位相同类别的产品计量单位"
+
+#~ msgid "Archived"
+#~ msgstr "已归档"
 
 #~ msgid "If checked new messages require your attention."
 #~ msgstr ".如果勾选此项，将会收到新消息提醒。"
